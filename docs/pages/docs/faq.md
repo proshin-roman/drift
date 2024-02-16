@@ -141,19 +141,19 @@ result of your queries.
 
 ### floor
 Floor also has a lot of convenience features like auto-updating queries and schema migrations. Similar to drift, you
-define the structure of your database in Dart. Then, you have write queries in sql - the mapping code if generated
+define the structure of your database in Dart. Then, you have to write queries in SQL - the mapping code is generated
 by floor. Drift has a [similar feature]({{ "SQL API/custom_queries.md" | pageUrl }}), but it can also verify that your queries are valid at compile time. Drift
-additionally has an api that lets you write some queries in Dart instead of sql.
+additionally has an API that lets you write some queries in Dart instead of SQL.
 
 A difference between these two is that Floor lets you write your own classes and generates mapping code around that.
-By default, drift generates most classes for you, which can make it easier to use, but makes the api less flexible in some
+By default, drift generates most classes for you, which can make it easier to use, but makes the API less flexible in some
 instances.
 Drift can also be used with [custom row classes]({{ 'custom_row_classes.md' | pageUrl }}) though.
 
 ### firebase
 Both the Realtime Database and Cloud Datastore are easy to use persistence libraries that can sync across devices while
-still working offline. Both of them feature auto-updating streams and a simple query api. However, neither of them is
-a relational database, so they don't support useful sql features like aggregate functions, joins, or complex filters.
+still working offline. Both of them feature auto-updating streams and a simple query API. However, neither of them is
+a relational database, so they don't support useful SQL features like aggregate functions, joins, or complex filters.
 
 Firebase is a very good option when
 
